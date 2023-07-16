@@ -296,7 +296,7 @@ const updateUserPassword = async(req,res) => {
   try{
     const user = await User.findOne({_id: req.body.userid})
     if(user){
-      const password = req.body.password;
+      const password = req.body.pass;
       const salt = await bcrypt.genSalt(10);
       const hashedPassword = await bcrypt.hash(password, salt);
       user.password = hashedPassword;
