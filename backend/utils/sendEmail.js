@@ -10,8 +10,8 @@ module.exports = async (user, mailType) => {
       port: 587,
       secure: true,
       auth: {
-        user: "adityaganji889@gmail.com",
-        pass: "aybolmnhturpylcr",
+        user: process.env.SEND_EMAIL,
+        pass: process.env.PASS_KEY,
       },
     });
     const salt = await bcrypt.genSalt(10);
@@ -39,7 +39,7 @@ module.exports = async (user, mailType) => {
       emailContent = `<div><h1>Please click on the below link to verify your email address</h1> <a href="https://mern-expense-tracker-website.onrender.com/verifyemail/${encryptedToken}">${encryptedToken}</a>  </div>`;
 
       mailOptions = {
-        from: "adityaganji889@gmail.com",
+        from: process.env.SEND_EMAIL,
         to: user.email,
         subject: "Verify Email For MERN Expense Tracker Auth",
         html: emailContent,
@@ -48,7 +48,7 @@ module.exports = async (user, mailType) => {
       emailContent = `<div><h1>Please click on the below link to reset your password</h1> <a href="https://mern-expense-tracker-website.onrender.com/resetpassword/${encryptedToken}">${encryptedToken}</a>  </div>`;
 
       mailOptions = {
-        from: "adityaganji889@gmail.com",
+        from: process.env.SEND_EMAIL,
         to: user.email,
         subject: "Reset password For MERN Expense Tracker Auth",
         html: emailContent,
