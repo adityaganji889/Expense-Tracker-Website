@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express();
-const cors = require("cors");
+// const cors = require("cors");
 const path = require("path");
 require("dotenv").config()
 const db = require("./config/db");
@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000
 const userRoute = require("./routes/userRoutes");
 const transactionRoute = require('./routes/transactionRoutes')
 
-app.use(cors());
+// app.use(cors());
 app.use(express.json({
     limit: "50mb",
 }));
