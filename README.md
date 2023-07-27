@@ -10,7 +10,8 @@
  * Category wise analysis and statistics for both income and expense transactions.
 
  ## Backend Schema Diagram:
- ![image](https://github.com/adityaganji889/Expense-Tracker-Website/assets/88584574/53fb4631-e873-45bb-b639-57b753077e86)
+ ![image](https://github.com/adityaganji889/Expense-Tracker-Website/assets/88584574/fde9aced-a260-4374-a8df-9a8a6a3f0e64)
+
  
 ## Tech Stack Used:
 #### Front-End:
