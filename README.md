@@ -9,6 +9,11 @@
  * User can analyse the transactions based on count , amount , total turnover.
  * Category wise analysis and statistics for both income and expense transactions.
 
+ ## Backend Schema Diagram:
+ ![image](https://github.com/adityaganji889/Expense-Tracker-Website/assets/88584574/a1bb80bf-cff5-4daa-aa42-b852189c266b)
+
+
+
 ## Tech Stack Used:
 #### Front-End:
 <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img alt="Redux" src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"/> <img alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img src="https://img.shields.io/badge/Ant%20Design-0170FE?logo=antdesign&logoColor=fff&style=for-the-badge" alt="Ant Design Badge">
